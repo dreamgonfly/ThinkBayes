@@ -141,7 +141,7 @@ def Underride(d, **options):
     if d is None:
         d = {}
 
-    for key, val in options.iteritems():
+    for key, val in options.items():
         d.setdefault(key, val)
 
     return d
@@ -345,7 +345,7 @@ def Contour(obj, pcolor=False, contour=True, imshow=False, **options):
 
     Underride(options, linewidth=3, cmap=matplotlib.cm.Blues)
 
-    xs, ys = zip(*d.iterkeys())
+    xs, ys = zip(*d.keys())
     xs = sorted(set(xs))
     ys = sorted(set(ys))
 
