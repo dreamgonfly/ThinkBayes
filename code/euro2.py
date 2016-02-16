@@ -58,7 +58,7 @@ class Euro2(thinkbayes.Suite):
 
 
 def Version1():
-    suite = Euro(xrange(0, 101))
+    suite = Euro(range(0, 101))
     heads, tails = 140, 110
     dataset = 'H' * heads + 'T' * tails
 
@@ -69,7 +69,7 @@ def Version1():
 
 
 def Version2():
-    suite = Euro(xrange(0, 101))
+    suite = Euro(range(0, 101))
     heads, tails = 140, 110
     dataset = 'H' * heads + 'T' * tails
 
@@ -78,7 +78,7 @@ def Version2():
 
 
 def Version3():
-    suite = Euro2(xrange(0, 101))
+    suite = Euro2(range(0, 101))
     heads, tails = 140, 110
 
     suite.Update((heads, tails))
