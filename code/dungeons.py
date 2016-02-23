@@ -23,7 +23,7 @@ class Die(thinkbayes.Pmf):
         name: string
         """
         thinkbayes.Pmf.__init__(self, name=name)
-        for x in xrange(1, sides+1):
+        for x in range(1, sides+1):
             self.Set(x, 1)
         self.Normalize()
 
