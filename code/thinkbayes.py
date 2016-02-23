@@ -469,7 +469,7 @@ class Pmf(_DictWrapper):
             return self.Prob(obj)
 
     def __hash__(self):
-        return hash(id(self))
+        return id(self)
 
     def __ne__(self, obj):
         """Not equal to.
